@@ -61,5 +61,20 @@
     "typescript": "~5.3.3",
     "typescript-eslint": "^7.13.0"
   },
+  "lint-staged": {
+    "src/**/*.js": [
+      "git diff --cached --name-only",
+      "eslint --fix"
+    ],
+    "./src/**/*.js": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "./husky/commit-msg",
+      "pre-commit": "./husky/pre-commit"
+    }
+  },
   "private": true
 }
