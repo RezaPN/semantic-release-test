@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Regex pattern for checking the commit message format
+PATTERN='^(fix|update|refactor|docs|feat): [a-zA-Z0-9\s]+'
+
+# Read the commit message from the commit file passed as argument
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat $COMMIT_MSG_FILE)
+
+Green='\033[0;32m'
+Red='\033[0;31m'
+
+echo "${Green}Checking Commit Message ..."
+if ! echo "$COMMIT_MSG" | grep -iqE "$PATTERN"; then
+    echo ""
+    echo "${Red}Aborting commit. Your commit message is not formatted properly."
+    echo "${Red}Your commit message should start with prefix (fix|update|refactor|docs|feat) and a colon(:) followed by a space,"
+    echo ""
+    exit 1
+fi
+
+# Run lint-staged
+echo "${Green}Running lint-staged ..."
+npx lint-staged
+LINT_EXIT_CODE=$?
+
+if [ $LINT_EXIT_CODE -ne 0 ]; then
+    echo "${Red}Lint-staged failed. Aborting commit."
+    exit 1
+fi
+
+echo "${Green}All checks passed. Proceeding with commit."
