@@ -1,3 +1,15 @@
+## [2.0.8](https://github.com/RezaPN/semantic-release-test/compare/v2.0.7...v2.0.8) (2024-06-12)
+
+
+### fix
+
+* adding something; ([](https://github.com/RezaPN/semantic-release-test/commit/54937bb9ca613d05186e4f9ab0a269d7b1797a3b))
+
+
+### Update
+
+* Merge branch 'main' of https://github.com/RezaPN/semantic-release-test ([](https://github.com/RezaPN/semantic-release-test/commit/e124ed65d2d4fd237bf1ed2abeae8962b6534e76))
+
 ## [2.0.7](https://github.com/RezaPN/semantic-release-test/compare/v2.0.6...v2.0.7) (2024-06-12)
 
 
