@@ -1,7 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires, no-undef
 const conventionalChangelogAngular = require('conventional-changelog-angular');
 
-// eslint-disable-next-line no-undef
 module.exports = conventionalChangelogAngular.then(writerOpts => {
   const originalTransform = writerOpts.writerOpts.transform;
 
