@@ -1,3 +1,11 @@
+## [2.0.2](https://github.com/RezaPN/semantic-release-test/compare/v2.0.1...v2.0.2) (2024-06-12)
+
+
+### Bug Fixes
+
+* added conventional-changelog-angular ([e6ce877](https://github.com/RezaPN/semantic-release-test/commit/e6ce877a9e06b7e7f090d7a92303c68d50ce1663))
+* merge conflict solved ([2cca6ea](https://github.com/RezaPN/semantic-release-test/commit/2cca6ea5df640e2f838650a050dc6242e8b11b1f))
+
 ## [2.0.1](https://github.com/RezaPN/semantic-release-test/compare/v2.0.0...v2.0.1) (2024-06-12)
 
 # [2.0.0](https://github.com/RezaPN/semantic-release-test/compare/v1.1.0...v2.0.0) (2024-06-12)
