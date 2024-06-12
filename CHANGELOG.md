@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/RezaPN/semantic-release-test/compare/v2.0.4...v2.0.5) (2024-06-12)
+
+
+### update
+
+* added release-notes tranform commit ([](https://github.com/RezaPN/semantic-release-test/commit/69cf3634f63aea21f4f0788371e4b5ce2b53d720))
+
 ## [2.0.4](https://github.com/RezaPN/semantic-release-test/compare/v2.0.3...v2.0.4) (2024-06-12)
 
 
