@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/RezaPN/semantic-release-test/compare/v1.1.0...v2.0.0) (2024-06-12)
+
+
+### Features
+
+* overhaul API to use RESTful conventions ([e4540e8](https://github.com/RezaPN/semantic-release-test/commit/e4540e8d1e8d250cb3267f02d8e02d982b3f6410))
+
+
+### BREAKING CHANGES
+
+* The API endpoints have been redesigned to follow RESTful conventions. This change impacts all existing API clients.
+
 # [1.1.0](https://github.com/RezaPN/semantic-release-test/compare/v1.0.1...v1.1.0) (2024-06-12)
 
 
