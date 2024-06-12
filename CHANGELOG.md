@@ -1,3 +1,10 @@
+## [2.0.9](https://github.com/RezaPN/semantic-release-test/compare/v2.0.8...v2.0.9) (2024-06-12)
+
+
+### Bug Fixes
+
+* change writerops ([8999992](https://github.com/RezaPN/semantic-release-test/commit/89999928f9adb70548335b72a36fdecfc4c5cbc2))
+
 ## [2.0.8](https://github.com/RezaPN/semantic-release-test/compare/v2.0.7...v2.0.8) (2024-06-12)
 
 
