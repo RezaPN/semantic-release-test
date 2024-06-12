@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/RezaPN/semantic-release-test/compare/v1.0.1...v1.1.0) (2024-06-12)
+
+
+### Features
+
+* BREAKING CHANGES - nyoba semantic release jenkins naikin ver ([72f54e5](https://github.com/RezaPN/semantic-release-test/commit/72f54e5213034fe86b4815141d0d03b8e81fc96d))
+
 ## [1.0.1](https://github.com/RezaPN/semantic-release-test/compare/v1.0.0...v1.0.1) (2024-06-12)
 
 
