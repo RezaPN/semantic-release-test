@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/RezaPN/semantic-release-test/compare/v1.0.0...v1.0.1) (2024-06-12)
+
+
+### Bug Fixes
+
+* added packagelock json ([ee6851d](https://github.com/RezaPN/semantic-release-test/commit/ee6851d5fa56dba39440c9c9e26f66d7839dcf37))
+* added realserc for writing rules of semantic-release ([277ac3b](https://github.com/RezaPN/semantic-release-test/commit/277ac3b32df5aa0a73d4bea4a5d001bd245cb4ca))
+* try change some shit ([70feaa9](https://github.com/RezaPN/semantic-release-test/commit/70feaa990a52d89c1699e3ef42a132916849ac57))
+
 # 1.0.0 (2024-06-11)
 
 
