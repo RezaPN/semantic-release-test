@@ -6,16 +6,20 @@
       "@semantic-release/commit-analyzer",
       {
         "preset": "angular",
-        "releaseRules": "./config/release-rules",
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-        }
+        "releaseRules": [
+          {
+            "type": "update",
+            "release": "patch"
+          }
+        ]
       }
     ],
     [
       "@semantic-release/release-notes-generator",
       {
-        "config": "./config/release-notes"
+        "config": "./scripts/release-notes",
+        "linkCompare": false,
+        "linkReferences": false
       }
     ],
     [
