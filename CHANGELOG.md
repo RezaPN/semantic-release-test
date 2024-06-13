@@ -1,3 +1,13 @@
+## [2.0.19](https://github.com/RezaPN/semantic-release-test/compare/v2.0.18...v2.0.19) (2024-06-13)
+
+### Bug Fixes
+
+* Merge branch 'main' of https://github.com/RezaPN/semantic-release-test ([c62530c](https://github.com/RezaPN/semantic-release-test/commit/c62530c1c0863bfa7f17bdb91f8e72d023da297d))
+
+### Updates
+
+* test delete something, does it fucked? ([6601589](https://github.com/RezaPN/semantic-release-test/commit/66015897aa6ff44f094018e85889f36683c899ac))
+
 ## [2.0.18](https://github.com/RezaPN/semantic-release-test/compare/v2.0.17...v2.0.18) (2024-06-13)
 
 ### Updates
