@@ -15,7 +15,7 @@
     [
       "@semantic-release/release-notes-generator",
       {
-        "config": "require('./config/release-notes')"
+        "config": "./config/release-notes"
       }
     ],
     [
