@@ -1,3 +1,5 @@
+## 2.0.14 (2024-06-13)
+
 ## [2.0.13](https://github.com/RezaPN/semantic-release-test/compare/v2.0.12...v2.0.13) (2024-06-13)
 
 ## [2.0.12](https://github.com/RezaPN/semantic-release-test/compare/v2.0.11...v2.0.12) (2024-06-13)
