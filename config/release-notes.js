@@ -1,26 +1,47 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires, no-undef
-module.exports = require("conventional-changelog-angular").then(
-  conventionalChangelogAngular => {
-    const transformAngular = conventionalChangelogAngular.writerOpts.transform
-    const dummyNote = {
-      title: 'dummy',
-      text: 'dummy'
-    }
+module.exports = {
+  writerOpts: {
+    transform: (commit, context) => {
+      let type = commit.type;
 
-    conventionalChangelogAngular.writerOpts.transform = (commit, context) => {
-      if (commit.type == 'update') {
-        // add notes to prevent discard
-        // https://github.com/conventional-changelog/conventional-changelog/blob/bfe3bf1c49d4a125474b398b2d304749fd3b56c7/packages/conventional-changelog-angular/writer-opts.js#L31
-        if (!commit.notes.length) {
-          commit.notes = [dummyNote]
-        }
-        commit = transformAngular(commit, context)
-        commit.notes = commit.notes.filter(note => note !== dummyNote)
-        commit.type = "Updates"
+      if (type === 'feat') {
+        type = 'Features';
+      } else if (type === 'fix') {
+        type = 'Bug Fixes';
+      } else if (type === 'perf') {
+        type = 'Performance Improvements';
+      } else if (type === 'revert') {
+        type = 'Reverts';
+      } else if (type === 'docs') {
+        type = 'Documentation';
+      } else if (type === 'style') {
+        type = 'Styles';
+      } else if (type === 'refactor') {
+        type = 'Code Refactoring';
+      } else if (type === 'test') {
+        type = 'Tests';
+      } else if (type === 'build') {
+        type = 'Build System';
+      } else if (type === 'ci') {
+        type = 'Continuous Integration';
+      } else if (type === 'chore') {
+        type = 'Chores';
+      } else if (type === 'update') {
+        type = 'Updates';
       } else {
-        commit = transformAngular(commit, context)
+        return;
       }
-      return commit
+
+      commit.type = type;
+
+      if (commit.scope === '*') {
+        commit.scope = '';
+      }
+
+      if (typeof commit.hash === 'string') {
+        commit.hash = commit.hash.substring(0, 7);
+      }
+
+      return commit;
     }
-    return conventionalChangelogAngular
-  })
+  }
+};
