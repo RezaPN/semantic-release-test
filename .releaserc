@@ -6,7 +6,7 @@
       "@semantic-release/commit-analyzer",
       {
         "preset": "angular",
-        "releaseRules": "./config/release-rules.cjs",
+        "releaseRules": "./config/release-rules",
         "parserOpts": {
           "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
         }
