@@ -1,3 +1,13 @@
+## [2.0.22](https://github.com/RezaPN/semantic-release-test/compare/v2.0.21...v2.0.22) (2024-06-24)
+
+### Bug Fixes
+
+* add semantic-release/git for automatically update semantic ([42a180e](https://github.com/RezaPN/semantic-release-test/commit/42a180e495ba94dd989dac4ecbd7edfbc66f7bd9))
+
+### Updates
+
+* make package.json private ([b87fa97](https://github.com/RezaPN/semantic-release-test/commit/b87fa974936f510b1c34e012d79afdd8cda554a5))
+
 ## [2.0.19](https://github.com/RezaPN/semantic-release-test/compare/v2.0.18...v2.0.19) (2024-06-13)
 
 ### Bug Fixes
