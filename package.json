@@ -78,5 +78,5 @@
       "pre-commit": "./husky/pre-commit"
     }
   },
-  "private": false
+  "private": true
 }
