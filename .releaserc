@@ -1,39 +1,79 @@
 {
-  "plugins": [
-    "@semantic-release/changelog",
-    "@semantic-release/npm",
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        "preset": "angular",
-        "releaseRules": "./config/release-rules.cjs",
-        "parserOpts": {
-          "noteKeywords": [
-            "BREAKING CHANGE",
-            "BREAKING CHANGES"
-          ]
-        }
-      }
+    "branches": [
+        "main",
+        "main-shit"
     ],
-    [
-      "@semantic-release/release-notes-generator",
-      {
-        "preset": "conventionalcommits",
-        "presetConfig": {
-          "types": [
-            { "type": "feat", "section": "Features", "hidden": false },
-            { "type": "fix", "section": "Bug Fixes", "hidden": false },
-            { "type": "update", "section": "Updates", "hidden": false },
-            { "type": "docs", "section": "Documentation", "hidden": false },
-            { "type": "refactor", "section": "Code Refactoring", "hidden": false },
-            { "type": "perf", "section": "Performance Improvements", "hidden": false },
-            { "type": "style", "section": "Styles", "hidden": true },
-            { "type": "test", "section": "Tests", "hidden": true },
-            { "type": "chore", "section": "Chores", "hidden": true }
-          ]
-        }
-      }
-    ]
-  ],
-  "preset": "angular"
+    "plugins": [
+        "@semantic-release/changelog",
+        "@semantic-release/npm",
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "preset": "angular",
+                "releaseRules": "./config/release-rules.cjs",
+                "parserOpts": {
+                    "noteKeywords": [
+                        "BREAKING CHANGE",
+                        "BREAKING CHANGES"
+                    ]
+                }
+            }
+        ],
+        [
+            "@semantic-release/release-notes-generator",
+            {
+                "preset": "conventionalcommits",
+                "presetConfig": {
+                    "types": [
+                        {
+                            "type": "feat",
+                            "section": "Features",
+                            "hidden": false
+                        },
+                        {
+                            "type": "fix",
+                            "section": "Bug Fixes",
+                            "hidden": false
+                        },
+                        {
+                            "type": "update",
+                            "section": "Updates",
+                            "hidden": false
+                        },
+                        {
+                            "type": "docs",
+                            "section": "Documentation",
+                            "hidden": false
+                        },
+                        {
+                            "type": "refactor",
+                            "section": "Code Refactoring",
+                            "hidden": false
+                        },
+                        {
+                            "type": "perf",
+                            "section": "Performance Improvements",
+                            "hidden": false
+                        },
+                        {
+                            "type": "style",
+                            "section": "Styles",
+                            "hidden": true
+                        },
+                        {
+                            "type": "test",
+                            "section": "Tests",
+                            "hidden": true
+                        },
+                        {
+                            "type": "chore",
+                            "section": "Chores",
+                            "hidden": true
+                        }
+                    ]
+                }
+            }
+        ]
+    ],
+    "preset": "angular"
 }
