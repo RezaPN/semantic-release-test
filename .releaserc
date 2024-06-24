@@ -73,7 +73,18 @@
                     ]
                 }
             }
-        ]
+        ],
+        [
+            "@semantic-release/git",
+            {
+              "assets": [
+                "package.json",
+                "yarn.lock",
+                "CHANGELOG.md"
+              ],
+              "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+            }
+          ]
     ],
     "preset": "angular"
 }
